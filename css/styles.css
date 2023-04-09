@@ -610,7 +610,7 @@ img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: var(--footer-icon-soc);
+  background-color: var(--icon-soc-team);
   transition: var(--transition);
   display: flex;
   align-items: center;
@@ -722,6 +722,9 @@ img {
 }
 
 .close-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 24px;
   height: 24px;
   background-color: #E7E9FC;
@@ -756,8 +759,10 @@ img {
 }
 
 .modal-field{ 
-  display: block;
+  position: relative;
+  display: block; 
   margin-bottom: 8px;
+  
 }
 
 .modal-description {
@@ -768,27 +773,24 @@ img {
   margin-bottom: 4px;
 }
 
-.input-wrap{
-  position: relative;
-}
-
 .modal-input{
   width: 100%;
   height: 40px;
+  font-size: 18px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   background-color: transparent;
-  padding-left: 38px;
-  font-size: 18px;
   outline: transparent;
+  padding-left: 38px;
   transition: var(--transition);
 }
 
 .modal-input-icon {
+  display: block;
   position: absolute;
-  left: 16px;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 66%;
+  left: 19px;
+  transform: translate(-50%, -50%);
   transition: var(--transition);
 }
 
@@ -872,6 +874,7 @@ img {
 
 .link-conditions{
   color: #4D5AE5; 
+  margin-left: 4px;
 }
 
 .modal-button {
